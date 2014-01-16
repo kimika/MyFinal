@@ -5,6 +5,8 @@ MyfinalApp::Application.routes.draw do
   get "users/index"
   get "politicians/index"
 
+  resources :games, :users, :politicians
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
