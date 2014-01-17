@@ -12,18 +12,14 @@
 <div class="container">
   <header class="row">
     <nav class="navbar navbar-pills navbar-inverse" role="navigation">
-      <!-- <div class="navbar-header">
-        <%= link_to(image_tag('Congress.png', class: 'logo'), root_path) %>
-        <%= link_to "Home", root_path, class: 'navbar-brand' %>
-      </div> -->
       <ul class="nav nav-pills nav-justified">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Game explained</a></li>
-        <li><a href="#">Politicians</a></li>
-        <li><a href="#">Scoreboard</a></li>
-        <li><a href="#">Start playing</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><%= link_to"Home", root_path %></li>
+        <li><%= link_to"Instructions", games_index_path %></li>
+        <li><%= link_to"Politicians", politicians_index_path %></li>
+        <li><%= link_to"Scoreboard", games_index_path %></li>
+        <li><%= link_to"Start playing", users_index_path %></li>
+        <li><%= link_to"Login", users_index_path %></li>
+        <li><%= link_to"Logout", users_index_path %></li>
       </ul>
     </nav>
   </header>
@@ -34,3 +30,8 @@
 </div>
 </body>
 </html>
+
+      <!-- <div class="navbar-header">
+        <%= link_to(image_tag('Congress.png', class: 'logo'), root_path) %>
+        <%= link_to "Home", root_path, class: 'navbar-brand' %>
+      </div> -->

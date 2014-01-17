@@ -40,6 +40,7 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    ffi (1.9.3)
     getopt (1.4.1)
     hike (1.2.3)
     i18n (0.6.9)
@@ -57,6 +58,8 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
+    nice-ffi (0.4)
+      ffi (>= 0.5.0)
     pg (0.17.1)
     polyglot (0.3.3)
     pry (0.9.12.4)
@@ -92,6 +95,11 @@ GEM
       json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    ruby-sdl-ffi (0.4)
+      nice-ffi (>= 0.2)
+    rubygame (2.6.4)
+      rake (>= 0.7.0)
+      ruby-sdl-ffi (>= 0.1.0)
     ruql (0.0.2)
       builder
       getopt
@@ -146,6 +154,7 @@ DEPENDENCIES
   rails_12factor
   rails_layout
   rest-client
+  rubygame
   ruql (~> 0.0.2)
   sass-rails (~> 4.0.0)
   sdoc

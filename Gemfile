@@ -6,6 +6,7 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'simple_form'
 gem 'rest-client'
+gem 'rubygame'
 gem "smarter_csv", "~> 1.0.17"
 
 # gem 'congress' THIS THE SQUISHY WAY
