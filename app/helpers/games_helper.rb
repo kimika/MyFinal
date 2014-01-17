@@ -1,4 +1,5 @@
-# module GamesHelper
+module GamesHelper
+end
 #   class Game
     
 #     def start

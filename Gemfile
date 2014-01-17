@@ -6,15 +6,12 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'simple_form'
 gem 'rest-client'
-gem 'rubygame'
-gem "smarter_csv", "~> 1.0.17"
 
 # gem 'congress' THIS THE SQUISHY WAY
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', "~> 3.0.3.0"
-gem "ruql", "~> 0.0.2"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
