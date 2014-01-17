@@ -11,10 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140116025828) do
-
-# Could not dump table "Representatives" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+ActiveRecord::Schema.define(version: 20140117154854) do
 
   create_table "games", force: true do |t|
     t.integer  "index"
@@ -37,6 +34,11 @@ ActiveRecord::Schema.define(version: 20140116025828) do
     t.integer  "facebook_id"
     t.integer  "youtube_id"
     t.integer  "index"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "representatives", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
