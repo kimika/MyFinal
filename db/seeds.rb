@@ -1,9 +1,6 @@
-('/Users/kimbalin/code/Final_Project/myfinal_app/db')
+require 'yaml' 
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+YAML.load("/Users/kimbalin/code/Final_Project/myfinal_app/db") #=> "foo"
+YAML.dump("/Users/kimbalin/code/Final_Project/myfinal_app/db")     # => "--- foo\n...\n"
+{ :a => 'b'}.to_yaml  # => "---\n:a: b\n"
+

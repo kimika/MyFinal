@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140116025828) do
 
+# Could not dump table "Representatives" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
+
   create_table "games", force: true do |t|
     t.integer  "index"
     t.integer  "level"
