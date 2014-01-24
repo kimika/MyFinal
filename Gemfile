@@ -5,6 +5,7 @@ gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 gem 'simple_form'
+gem 'devise'
 gem 'rest-client'
 gem "psych", "~> 2.0.2"
 
