@@ -5,65 +5,19 @@
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-     <link href="carousel.css" rel="stylesheet">
 </head>
 
-<div class="container">
-  <div class="row clearfix">
-    <div class="col-md-12 column">
-      <div class="page-header">
-        <h1>Are You Smarter Than...<!--  <small>Subtext for header</small> --></h1>
-      </div>
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="http://lorempixel.com" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Speaker of the House Rep. John Boehner</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-<img alt="140x140" src="http://lorempixel.com" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Minority House Speaker Rep. Nancy Pelosi</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="<img alt="140x140" src="http://lorempixel.com" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Rep. Rand Paul</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hey, Smartie Pants!</h1>
+        <h2>Are you smarter than a Congressman?</h2>
+        <p>Info about how to play - bare bones</p>
+        <p><a class="btn btn-primary btn-lg" href="games.index" role="button">Start playing &raquo;</a></p>
       </div>
     </div>
-  </div>
 
     <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="http://lorempixel.com/140x140" alt="Generic placeholder image">

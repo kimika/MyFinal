@@ -8,6 +8,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'rest-client'
 gem "psych", "~> 2.0.2"
+gem "fastercsv"
 
 # gem 'congress' THIS THE SQUISHY WAY
 
