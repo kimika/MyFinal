@@ -7,29 +7,48 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-<body>
-<div class="container">
-  <header class="row">
-    <nav class="navbar navbar-pills navbar-inverse" role="navigation">
-      <ul class="nav nav-pills nav-justified">
-        <li><%= link_to"Home", root_path %></li>
-        <li><%= link_to"Congressional Challengers", politicians_index_path %></li>
-        <li><%= link_to"Start playing", games_index_path %></li>
-        <li><%= link_to"Login", users_index_path %></li>
-        <li><%= link_to"Logout", users_index_path %></li>
-      </ul>
-    </nav>
-  </header>
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Smartie Pols</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <li><%= link_to"Home", root_path %></li>
+                  <li><%= link_to"Congressional Challengers", politicians_index_path %></li>
+                    <% if user_signed_in? %>
+                      <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+                    <% else %>
+                      <li><%= link_to "Sign up & Sign in", new_user_registration_path %></li>
+                      <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <% end %>
+
+  <div>
 
 
   <%= yield %>
 
-</div>
-</body>
+  </div>
+  </body>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../docs-assets/js/holder.js"></script>
 </html>
-
-      <!-- <div class="navbar-header">
-        <%= link_to(image_tag('Congress.png', class: 'logo'), root_path) %>
-        <%= link_to "Home", root_path, class: 'navbar-brand' %>
-      </div> -->

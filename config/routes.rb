@@ -1,9 +1,10 @@
 MyfinalApp::Application.routes.draw do
-  root to: 'welcome#index'
+  devise_for :users
+  root :to => "welcome#index"
   
-  get "games/index"
-  get "users/index"
-  get "politicians/index"
+  get "games" => "games#index"
+  get "users" => "users#index"
+  get "politicians" => "politicians#index"
 
   resources :games, :users, :politicians
 
